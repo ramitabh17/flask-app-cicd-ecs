@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+   pre_build:
+      commands:
+         - python setup.py pytest
+
+artifacts:
+   files:
+      - 'scripts/**/*'
+      - 'run.py'
+      - 'app/**/*.py'
+      - 'appspec.yml'
+      - 'requirements.txt'
+      
+    
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo supervisorctl stop all
+sudo systemctl stop supervisor
+sudo systemctl stop nginx
+rm -rf /home/ubuntu/flaskapp
+
+
